@@ -9,6 +9,22 @@ Production-ready AI phone receptionist with Twilio, OpenAI Realtime, Google Cale
 - booking-service (Python/FastAPI)
 - web-dashboard (React)
 
+- Services
+
+telephony-gateway (Node.js/Express)
+Handles all inbound/outbound telephony with Twilio. Accepts incoming calls via TwiML, establishes Media Streams (bi-directional audio over WebSocket), and forwards raw audio to the voice-brain. It also streams synthesized audio back to Twilio so callers hear the AI’s voice. Responsible for phone number provisioning, call session management, and SMS relay.
+
+voice-brain (Node.js/Express)
+The core conversation orchestrator. Manages the real-time loop of ASR → LLM → TTS. Connects to OpenAI Realtime (or alternative Deepgram + ElevenLabs) for live transcription and speech synthesis. Maintains conversational state (service, time, customer info), handles barge-in, executes tool calls (e.g., booking, knowledge lookup), and produces transcripts.
+
+kb-service (Python/FastAPI)
+Provides the knowledge base (RAG) functionality. Ingests business FAQs, policies, and documents, chunks and embeds them with pgvector, and exposes APIs to search the KB when the voice-brain needs to answer questions. Ensures answers are grounded in the client’s data instead of hallucinated.
+
+booking-service (Python/FastAPI)
+Integrates with Google Calendar (and other schedulers) to check availability, create bookings, reschedule, or cancel appointments. Exposes clean endpoints (find_availability, book_appointment) for the voice-brain to call during live conversations. Handles timezone/DST edge cases and confirmations.
+
+web-dashboard (React)
+A multi-tenant admin and client portal. Businesses (or resellers in white-label setups) can configure their receptionist: upload/edit knowledge base content, view call logs and transcripts, manage phone numbers, set branding, and see analytics. Provides per-tenant settings for integrations (e.g., Google, HubSpot, Stripe).
 ## How to Run (Developer Guide)
 
 ### Prerequisites
