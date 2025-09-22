@@ -1,0 +1,51 @@
+services:
+  telephony-gateway:
+    build: ./services/telephony-gateway
+    env_file:
+      - ./services/telephony-gateway/.env
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+  voice-brain:
+    build: ./services/voice-brain
+    env_file:
+      - ./services/voice-brain/.env
+    ports:
+      - "5001:5001"
+    depends_on:
+      - db
+  kb-service:
+    build: ./services/kb-service
+    env_file:
+      - ./services/kb-service/.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  booking-service:
+    build: ./services/booking-service
+    env_file:
+      - ./services/booking-service/.env
+    ports:
+      - "8001:8001"
+    depends_on:
+      - db
+  web-dashboard:
+    build: ./web-dashboard
+    env_file:
+      - ./web-dashboard/.env
+    ports:
+      - "3000:3000"
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: ai_frontdesk
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
