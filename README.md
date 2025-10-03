@@ -1,4 +1,4 @@
-# AI Phone Receptionist System
+# Scheduling Agentic System
 
 Production-ready AI phone receptionist with Twilio, OpenAI Realtime, Google Calendar, Postgres/pgvector, and web dashboard. 
 
