@@ -1,0 +1,53 @@
+Appointment Duration Policy — Dentistry
+
+Purpose
+To standardize appointment lengths for clinical accuracy, patient flow, and required sterilization between patients.
+
+Scope
+Applies to all clinical bookings at the practice (dentists, hygienists, oral surgeons, and dental assistants).
+
+Scheduling Rules (general)
+- Clinic booking granularity: 15-minute increments.
+- Every booked patient block must include a 15-minute buffer after the clinical procedure for room turnover and sterilization. The buffer is separate from procedure time and cannot be omitted except in documented emergencies.
+- If multiple procedures are booked in one visit, appointment length = sum of individual procedure durations + one 15-minute turnover buffer.
+- If combined procedures exceed typical block sizes, book the next larger contiguous block (do not split across non-consecutive slots).
+- New patient or extended consultations should be scheduled with additional time to allow medical history, exam, and treatment planning.
+- Emergency/urgent patients: schedule a 15-minute triage; if treatment is performed same day, book appropriate full procedure time plus buffer.
+- Booking staff must confirm expected procedure(s) at time of booking and inform patient of total visit duration including buffer.
+
+Standard Procedure Durations (includes clinical time only; add 15-minute buffer)
+- Routine check-up / recall exam: 30 minutes
+- Dental prophylaxis (hygiene scaling and polish): 45–60 minutes (45 min pediatric/adult quick, 60 min adult full)*
+- Fillings (simple, one-surface): 45 minutes
+- Fillings (multi-surface): 60–75 minutes (adjust per complexity)
+- Root canal (single canal anterior): 60–90 minutes; molar root canals: 90–150 minutes depending on canals/complexity
+- Crown preparation: 90 minutes
+- Crown delivery/placement: 60 minutes
+- Surgical extraction (impacted or complex): 120 minutes
+- Simple extraction: 30–45 minutes
+- Implant placement (single): 120–180 minutes (includes setup, anesthesia, placement; staging and restoration visits scheduled separately)
+- Periodontal maintenance or scaling with root planing: 60–90 minutes (per quadrant or as clinically indicated)
+- Sedation/general anesthesia cases: add pre-op assessment time (30–60 minutes) and recovery/monitoring time (minimum 30 minutes) in addition to procedure time
+- Radiographs and intraoral scans: 10–20 minutes (add to appointment length as required)
+- Digital impressions/scan for lab work: 15–30 minutes
+
+Booking Examples
+- Routine check-up + fluoride: 30 (check-up) + 15 (fluoride) = 45 minutes + 15-minute buffer → book 60 minutes
+- Filling (single-surface) + radiographs: 45 + 15 = 60 + 15-minute buffer → book 75 minutes (round to nearest 15-min increment → 75)
+
+Overruns & Notifications
+- If a clinician overruns, reception should notify the next patient as soon as possible and offer options: wait, reschedule, or partial treatment if clinically appropriate.
+- Buffer time is intended to reduce overruns; staff should not routinely schedule back-to-back without buffer.
+
+Cancellations & Rescheduling
+- Patients must provide at least 24 hours notice for cancellations or rescheduling for routine appointments; longer notice may be required for surgical or sedation cases.
+- Cancellations within 24 hours may be subject to clinic cancellation policy/fees.
+
+Exceptions
+- Clinical judgement can override standard times for complex or unusual cases; when this occurs, document the reason and book appropriate extended time.
+- Pediatric, special-needs, and anxious patients often require additional chair time—add at least 15–30 minutes depending on needs.
+
+Review
+- This policy will be reviewed annually or as clinical practice changes dictate.
+
+*Adjust prophylaxis duration based on patient periodontal status and clinician assessment.
